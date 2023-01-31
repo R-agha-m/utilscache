@@ -63,8 +63,7 @@ class DictAsCache(dict):
             self.key_keeper_list.append(k)
 
         if self.__len__() > self.size:
-            key = self.key_keeper_list.pop(0)
-            del self[key]
+            del self[self.key_keeper_list.pop(0)]
 
         return
 

@@ -1,5 +1,9 @@
 from unittest import TestCase, main
-from .dict_as_cache import DictAsCache
+
+try:
+    from .dict_as_cache import DictAsCache
+except ImportError:
+    from dict_as_cache import DictAsCache
 
 
 class TestDictAsCache(TestCase):
@@ -16,10 +20,10 @@ class TestDictAsCache(TestCase):
         dict_as_cache_obj = DictAsCache(size=size)
         number = 1000
         for i in range(number):
-            print(i)
+            # print(i)
             dict_as_cache_obj[f"key {i}"] = f"value {i}"
-            if i % 200 == 1:
-                print(dict_as_cache_obj)
+            # if i % 200 == 1:
+            #     print(dict_as_cache_obj)
 
         self.assertEqual(len(dict_as_cache_obj), size)
 
