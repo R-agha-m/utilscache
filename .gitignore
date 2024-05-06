@@ -12,3 +12,4 @@ microsoft_reward_bot.spec
 **/__pycache__/**
 desktop.ini
 *.log
+utils_logging/
