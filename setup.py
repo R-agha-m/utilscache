@@ -29,17 +29,13 @@ setup(
     name="utilscache",
     version="0.0.1",
     packages=find_packages(),
-    package_data={
-        'utilsuseragent': ['user_agent.sqlite'],
-    },
-    include_package_data=True,
     install_requires=install_requires,
     author="Reza 'Sam' Aghamohammadi (Hacknitive)",
     author_email="hacknitive@gmail.com",
     description="Cache",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/hacknitive/utilsuseragent",
+    url="https://github.com/hacknitive/utilscache",
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
